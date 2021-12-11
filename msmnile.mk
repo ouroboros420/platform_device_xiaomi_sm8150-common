@@ -386,9 +386,6 @@ PRODUCT_PACKAGES += \
     qti_telephony_utils.xml \
     telephony-ext
 
-PRODUCT_BOOT_JARS += \
-    telephony-ext
-
 # Trust
 PRODUCT_PACKAGES += \
     vendor.lineage.trust@1.0-service
@@ -427,9 +424,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libnl \
     libwfdaac_vendor
-
-PRODUCT_BOOT_JARS += \
-    WfdCommon
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/sm8150-common/sm8150-common-vendor.mk)
