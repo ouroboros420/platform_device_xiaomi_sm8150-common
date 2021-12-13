@@ -227,6 +227,11 @@ on charger
     setprop sys.usb.configfs 1
     start leds-sh
 
+service mi_thermald /vendor/bin/mi_thermald
+    class core
+    user root
+    group system
+
 service vendor.spdaemon /vendor/bin/spdaemon
     class core
     user system
